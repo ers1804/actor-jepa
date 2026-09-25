@@ -1,11 +1,3 @@
-<!--
-Source - https://stackoverflow.com/a/75359298
-Posted by user21156527, modified by community. See post 'Timeline' for change history
-Retrieved 2026-09-25, License - CC BY-SA 4.0
--->
-
-<script src="https://rawcdn.githack.com/oscarmorrison/md-page/master/md-page.js"></script><noscript>
-
 # Actor-JEPA: Multi-Agent Motion Forecasting using Latent-Predictive Pretraining
 
 > **Paper under double-blind review.** This page accompanies the submission.
