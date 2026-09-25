@@ -14,13 +14,13 @@ substantial gains to null results. We introduce
 Actor-JEPA, which applies the Joint-Embedding Predictive Architecture to
 multi-agent scene encoding. Its encoder factorises the scene into a cross-agent
 interaction stage followed by per-agent temporal encoding, and that factorisation
-defines the prediction target: agents are mixed before masking, so the
+defines the prediction target: agents are mixed *before* masking, so the
 model predicts masked agent-timestep positions in a representation that already
 carries interaction context, rather than reconstructing coordinates. Across four label
-regimes and $14$ independent pretraining runs on the Waymo Open Motion Dataset, Actor-JEPA raises
-peak mAP from $0.2089 \pm 0.0111$ to $0.2245 \pm 0.0159$ at $20\%$ labels
-(+7.4\% relative, $p=0.006$, n=14) and from $0.2799 \pm 0.0086$ to
-$0.2938 \pm 0.0096$ at full labels (+5.0\%, $p=0.026$, n=6), in each case against the identical
+regimes and 14 independent pretraining runs on the Waymo Open Motion Dataset, Actor-JEPA raises
+peak mAP from 0.2089 ± 0.0111 to 0.2245 ± 0.0159 at 20% labels
+(+7.4% relative, *p* = 0.006, *n* = 14) and from 0.2799 ± 0.0086 to
+0.2938 ± 0.0096 at full labels (+5.0%, *p* = 0.026, *n* = 6), in each case against the identical
 architecture trained from scratch. Within a dataset, two conditions govern
 whether any benefit appears: the cross-agent stage must be transferred, since the
 per-agent core alone performs at from-scratch level, and pretraining must stop before a representation
@@ -95,9 +95,9 @@ pretrained vs. 12 from-scratch runs) we measure no benefit, at full labels or in
 regimes. We also report a matched-budget control in which pretraining and fine-tuning use the
 *same* scenario subset, removing the extra unlabelled data the pretext task otherwise sees.
 Confining the pretext task to the same
-$20\%$ subset the decoder is fine-tuned on, at equal gradient steps, leaves
-$+1.6\%$ over from-scratch ($0.2122 \pm 0.0092$ against $0.2089$, $p=0.62$,
-three pretraining runs) where pretraining on the full split gives $+7.4\%$.
+20% subset the decoder is fine-tuned on, at equal gradient steps, leaves
++1.6% over from-scratch (0.2122 ± 0.0092 against 0.2089, *p* = 0.62,
+three pretraining runs) where pretraining on the full split gives +7.4%.
 
 ---
 
