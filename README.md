@@ -39,8 +39,7 @@ already a mixture of the scene rather than a single agent's coordinates. A per-a
 core encodes the masked sequence; an EMA copy encodes the full sequence to produce targets; a
 predictor maps context latents to target positions, and the loss is taken in latent space.
 
-**(b) Downstream transfer.** Both pretrained stages — 12 tensors for the cross-agent stage,
-82 for the per-agent core — are transferred into an MTR forecasting model and fine-tuned. The
+**(b) Downstream transfer.** Both pretrained stages are transferred into an MTR forecasting model and fine-tuned. The
 map polyline encoder and the decoder are trained from scratch.
 
 ---
