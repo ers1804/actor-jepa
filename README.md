@@ -17,10 +17,10 @@ interaction stage followed by per-agent temporal encoding, and that factorisatio
 defines the prediction target: agents are mixed before masking, so the
 model predicts masked agent-timestep positions in a representation that already
 carries interaction context, rather than reconstructing coordinates. Across four label
-regimes and $14$ independent pretraining runs on the Waymo Open Motion Dataset, Actor-JEPA raises
-peak mAP from $0.2089 \pm 0.0111$ to $0.2245 \pm 0.0159$ at $20\%$ labels
-(+7.4\% relative, $p=0.006$, n=14) and from $0.2799 \pm 0.0086$ to
-$0.2938 \pm 0.0096$ at full labels (+5.0\%, $p=0.026$, n=6), in each case against the identical
+regimes and $`14`$ independent pretraining runs on the Waymo Open Motion Dataset, Actor-JEPA raises
+peak mAP from $`0.2089 \pm 0.0111`$ to $`0.2245 \pm 0.0159`$ at $`20\%`$ labels
+(+7.4\% relative, $`p=0.006`$, n=14) and from $`0.2799 \pm 0.0086`$ to
+$`0.2938 \pm 0.0096`$ at full labels (+5.0\%, $`p=0.026`$, n=6), in each case against the identical
 architecture trained from scratch. Within a dataset, two conditions govern
 whether any benefit appears: the cross-agent stage must be transferred, since the
 per-agent core alone performs at from-scratch level, and pretraining must stop before a representation
